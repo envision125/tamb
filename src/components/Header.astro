@@ -5,7 +5,10 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<!-- <h2><a href="/">{SITE_TITLE}</a></h2> -->
+		<div class="logo-container">
+			<img src="tabpic.jpeg" alt="Logo" />
+		  </div>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
@@ -82,4 +85,14 @@ import { SITE_TITLE } from '../consts';
 			display: none;
 		}
 	}
+	logo-container {
+      flex: 1; /* add this */
+      text-align: center; /* keep this */
+    }
+
+    .logo-container img {
+      width: 100px; /* adjust the width as needed */
+      height: auto;
+      margin: 20px auto; /* adjust the margin as needed */
+    }
 </style>

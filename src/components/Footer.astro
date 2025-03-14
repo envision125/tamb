@@ -3,6 +3,9 @@ const today = new Date();
 ---
 
 <footer>
+  <div class="logo-containerr">
+    <img src="/tabpic.jpeg" alt="Logo" />
+  </div>
   <div class="social-links">
     <a
       href="https://www.facebook.com/TortasAhogadsMiBarrio/about/?_rdr"
@@ -31,7 +34,7 @@ const today = new Date();
     </a>
 
     <a href="https://twitter.com/astrodotbuild" target="_blank">
-      <span class="sr-only">Follow Astro on Twitter</span>
+      <span class="sr-only">Follow Astro on Twitterhoes</span>
       <svg
         viewBox="0 0 16 16"
         aria-hidden="true"
@@ -60,11 +63,15 @@ const today = new Date();
       >
     </a>
   </div>
-  &copy; {today.getFullYear()} Tortas Ahogads Mi Barrio
+  <!-- Copy Right Section -->
+  <section class="copyright-tag">
+    &copy; {today.getFullYear()} Tortas Ahogads Mi Barrio
+  </section>
 
 </footer>
 <style>
   footer {
+    border-top: 8.5px solid var(--chiva);
     padding: 3em 2em 7em 2em;
     background: var(--accent-dark);
     color: rgb(var(--chiva));
@@ -82,5 +89,17 @@ const today = new Date();
   }
   .social-links a:hover {
     color: rgb(var(--gray-dark));
+  }
+
+  .logo-containerr img {
+    width: 80px; /* adjust the width as needed */
+    height: auto;
+    margin: 20px auto; /* adjust the margin as needed */
+    border-radius: 40px;
+  }
+
+  .copyright-tag {
+    color: #F8F6EE;
+    /* color: rgb(255, 251, 0); */
   }
 </style>

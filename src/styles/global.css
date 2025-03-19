@@ -114,19 +114,6 @@ img {
   border-radius: 2px;
 }
 
-/* Style for background image */
-.hero-image {
-  position: relative;
-}
-
-.hero-image img {
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
 code {
   padding: 2px 5px;
   background-color: rgb(var(--gray-light));

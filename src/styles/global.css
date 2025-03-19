@@ -55,7 +55,6 @@ main {
   margin: auto;
   padding: 3em 1em;
 }
-h1,
 h2,
 h3,
 h4,
@@ -64,6 +63,7 @@ h6 {
   margin: 0 0 0.5rem 0;
   color: rgb(var(--black));
   line-height: 1.2;
+  text-align: center;
 }
 h1 {
   font-size: 3.052em;
@@ -134,7 +134,7 @@ blockquote {
 }
 hr {
   border: none;
-  border-top: 6px solid red;
+  border-top: 6px solid #0f203b;
   border-radius: 8px;
 }
 @media (max-width: 720px) {

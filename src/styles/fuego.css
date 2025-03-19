@@ -15,3 +15,12 @@
   background-repeat: no-repeat;
   object-fit: cover;
 }
+/* 
+   Style: Banner Title: center 
+*/
+h1{
+    margin: 0 0 0.5rem 0;
+    color: var(--chiva);
+    line-height: 1.2;
+    text-align: center;
+  }

@@ -65,7 +65,7 @@ img {
   margin: auto;
   border: 3px solid #17428E; /* Add a 1px solid border with a light gray color */
   border-radius: px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.57); /* Add a box shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow */
 
 }
 

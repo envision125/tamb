@@ -9,7 +9,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-   
   </head>
   <body>
     <Header />
@@ -20,49 +19,114 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     </div>
     <main>
       <h1>Tortas Ahogadas Mi Barrio</h1>
-      <hr />
-      <!-- <h2>Estilo Jalisco</h> -->
-	<section>
-		<!-- Menu Slideshow Section -->
-		<h3>* Estilo Jalisco *</h3>
-		<p>
-			Have fun! If you get stuck, remember to <a
-			  href="https://docs.astro.build/"
-			  >read the docs
-			</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask
-			questions.
-		</p>
-		<div>
-			<h3>BEST IN TOWN!</h3>
-		</div>
+      <section>
+        <h3>* Estilo Jalisco *</h3>
+        <p></p>
+        <!-- <div>
+          <h3>BEST IN TOWN!</h3>
+        </div> -->
+      </section>
+
+      <!-- Menu Slideshow Section -->
+      <section>
+        <div>
+          <!-- Slide: 2x-seconds</p> -->
+
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="torta.JPG" style="width:100%" />
+
+              <div class="text">TORTAS AHOGADAS</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="huevos.jpg" style="width:100%" />
+
+              <div class="text">PLATILLOS</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="tostada.jpeg" style="width:100%" />
+
+              <div class="text">CEVICHE</div>
+            </div>
+          </div>
+
+          <!-- Slides Buttons</p> -->
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- REV Section -->
+      <section>
+        <!-- Cards Component -->
+
+        
 
 
-		
-	</section>
-     
-	<section>
-		<!-- REV Section -->
-		<p>Here are a few ideas on how to get started with the template:</p>
-		<ul>
-		  <li>Edit this page in <code>src/pages/index.astro</code></li>
-		  <li>
-			Edit the site header items in <code>src/components/Header.astro</code>
-		  </li>
-		  <li>
-			Add your name to the footer in <code>src/components/Footer.astro</code
-			>
-		  </li>
-		 
-		
-		</ul>
-		  
-	
-	</section>
-     
 
+         <!-- Review Section -->
 
+      <section>
+        <h2>Great Views</h2>
+
+        <div class="title-underline"></div>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <p>
+                "Their food is delicious and the service is always friendly."
+              </p>
+
+              <span>— Hector P.</span>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <p>"Highly recommend! This place has been the bomb for years"</p>
+
+              <span>— Hector P.</span>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <p>"Great Mexican food, everything in the menu is amazing"</p>
+
+              <span>— Hector P.</span>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <p>"Very tasty tortas. The bread was key, it didn't get soggy"</p>
+
+              <span>— Hector P.</span>
+            </div>
+          </div>
+
+       
+        </div>
+        <div class="view-more-button">
+          <a
+            href="https://www.yelp.com/biz/tortas-ahogadas-mi-barrio-oakland"
+            class="button">View More</a
+          >
+      </section>
     </main>
-
+    <!-- Footer Component-->
     <Footer />
+    <script>
+      import "../scripts/slider.js";
+    </script>
   </body>
 </html>

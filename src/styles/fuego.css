@@ -25,6 +25,9 @@ h1 {
   line-height: 1.2;
   text-align: center;
 }
+h2{
+  color: #17428E;
+}
 h3 {
   margin: 0 0 0.5rem 0;
   color: green;
@@ -87,7 +90,7 @@ img {
   width: 15px;
   margin: 0 2px;
 
-  background-color: #384257;
+  background-color: #17428E;
   border-radius: 10%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -188,7 +191,7 @@ img {
 /* Style the counter cards */
 
 .card {
-  box-shadow: 0 4px 8px 0 #0f203b;
+  box-shadow: 0 4px 8px 0 ;
 
   /* box-shadow: 10px 5px 5px #0f203b; */
 
@@ -208,7 +211,7 @@ img {
 }
 
 .card span {
-  color: rgb(203, 203, 203);
+  color: rgb(254, 212, 0);
 
   font-weight: 700;
 }

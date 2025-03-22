@@ -3,6 +3,11 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+const revOne="Grant Cohn posted a video of him eating here. I had to check it out. I had a carnitas torta ahogada.";
+const revTwo="Delicious tortas ahogadas! Fast service. Very clean place. This was my second time. I will come again!";
+const revTres="Tuve unos tacos dorados de carnitas con papa, realmente la disfruté. ¡Qué delicia!"
+const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás también. 100% recomendado!";
 ---
 
 <!doctype html>
@@ -34,7 +39,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
           <div class="slideshow-container">
             <div class="mySlides fade">
-              <img src="torta.JPG" style="width:100%" />
+              <img src="torta.JPG" />
 
               <div class="text">TORTAS AHOGADAS</div>
             </div>
@@ -83,34 +88,34 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           <div class="column">
             <div class="card">
               <p>
-                "Their food is delicious and the service is always friendly."
+                {revOne}
               </p>
-
-              <span>— Tony</span>
+              <footer>Fred</footer>
             </div>
           </div>
 
           <div class="column">
             <div class="card">
-              <p>"Highly recommend! This place has been the bomb for years"</p>
+              <p>{revTwo}</p>
 
-              <span>— Angel</span>
+              <footer>Pia</footer>
+            </div>
+          
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <p>{revTres}</p>
+
+              <footer>Mariana</footer>
             </div>
           </div>
 
           <div class="column">
             <div class="card">
-              <p>"Great Mexican food, everything in the menu is amazing"</p>
+              <p>{revCuatro}</p>
 
-              <span>— Mari</span>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <p>"Very tasty tortas. The bread was key, it didn't get soggy"</p>
-
-              <span>— Hector</span>
+              <footer>Miguel</footer>
             </div>
           </div>
 
@@ -119,7 +124,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         <div class="view-more-button">
           <a
             href="https://www.yelp.com/biz/tortas-ahogadas-mi-barrio-oakland"
-            class="button">View More</a
+            class="button">VIEW MORE</a
           >
       </section>
     </main>

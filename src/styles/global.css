@@ -1,26 +1,14 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
- :root {
-  --accent: #2337ff;
-  --chiva: #c41e3a;
-  --accent-dark: #0f203b;
+:root {
+  --chiva: #b01c2e;
+  --accent: #022241;
+  --accent-light: #00468c;
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
   --gray-light: 229, 233, 240;
   --gray-dark: 34, 41, 57;
-  --glow: 204, 0, 0;
   --gray-gradient: rgba(var(--gray-light), 50%), #fff;
-  /* --box-shadow: rgb(204, 0, 0) 0px 5px 15px; */
-
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
-  /* --box-shadow:
-		0 2px 6px rgba(var(--glow), 25%), 0 8px 24px rgba(var(--glow), 33%),
-		0 16px 32px rgba(var(--glow), 33%); */
 }
 @font-face {
   font-family: "Atkinson";
@@ -41,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background: #F8F6EE;
+  background: linear-gradient(var(--gray-gradient)) no-repeat;
   background-size: 100% 600px;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -50,11 +38,12 @@ body {
   line-height: 1.7;
 }
 main {
-  /* width: 720px;
+  width: 720px;
   max-width: calc(100% - 2em);
-  margin: auto; */
+  margin: auto;
   padding: 3em 1em;
 }
+h1,
 h2,
 h3,
 h4,
@@ -63,16 +52,24 @@ h6 {
   margin: 0 0 0.5rem 0;
   color: rgb(var(--black));
   line-height: 1.2;
-  text-align: center;
 }
 h1 {
   font-size: 3.052em;
+  color: var(--chiva);
+  text-align: center;
+  border: 8px solid #00468c;
+  padding: 10px;
 }
 h2 {
   font-size: 2.441em;
+  font-weight: 700;
+  text-align: center;
+  color: #00468c;
 }
 h3 {
   font-size: 1.953em;
+  text-align: center;
+  color: #006338;
 }
 h4 {
   font-size: 1.563em;
@@ -100,32 +97,21 @@ textarea {
   width: 100%;
   font-size: 16px;
 }
-input {
-  font-size: 16px;
-}
+
 table {
   width: 100%;
 }
-
- /* Style for Blog and all images */
 img {
-  max-width: 100%;
+  max-width: 100%; /* max-width change image size */
   height: auto;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
-code {
-  padding: 2px 5px;
-  background-color: rgb(var(--gray-light));
-  border-radius: 2px;
-}
 pre {
   padding: 1.5em;
   border-radius: 8px;
 }
-pre > code {
-  all: unset;
-}
+
 blockquote {
   border-left: 4px solid var(--accent);
   padding: 0 0 0 20px;
@@ -134,8 +120,7 @@ blockquote {
 }
 hr {
   border: none;
-  border-top: 6px solid black;
-  border-radius: 8px;
+  border-top: 8px dashed #006338;
 }
 @media (max-width: 720px) {
   body {

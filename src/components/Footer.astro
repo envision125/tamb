@@ -1,10 +1,10 @@
 ---
 const today = new Date();
-import { SC_FB_TAG, SC_IG_TAG, SC_TK_TAG } from "../consts";
+import { dashLink, SC_FB_TAG, SC_IG_TAG, SC_TK_TAG } from "../consts";
 ---
 
 <footer>
-  <div class="logo-containerr">
+  <div class="logo-container">
     <img src="/tabpic.jpeg" alt="Logo" />
   </div>
   <div class="social-links">
@@ -12,7 +12,7 @@ import { SC_FB_TAG, SC_IG_TAG, SC_TK_TAG } from "../consts";
       href="https://www.facebook.com/TortasAhogadsMiBarrio/about/?_rdr"
       target="_blank"
     >
-      <span class="sr-only">Follow on Facebook</span>
+      <span class="sr-only">Follow {SC_FB_TAG} on Facebook</span>
       <svg width="32" height="32" viewBox="0 0 128 128">
         <rect
           width="118.35"
@@ -30,7 +30,7 @@ import { SC_FB_TAG, SC_IG_TAG, SC_TK_TAG } from "../consts";
     </a>
 
     <a href="https://www.tiktok.com/@tortasahogadasmibarrio" target="_blank">
-      <span class="sr-only">Follow {SC_FB_TAG} on TikTok</span>
+      <span class="sr-only">Follow {SC_TK_TAG} on TikTok</span>
       <svg
         width="32"
         height="32"
@@ -102,19 +102,27 @@ import { SC_FB_TAG, SC_IG_TAG, SC_TK_TAG } from "../consts";
       </svg>
     </a>
   </div>
-  <!-- Copy Right Section -->
-  <section class="copyright-tag">
-    &copy; {today.getFullYear()} Tortas Ahogads Mi Barrio
-  </section>
+  <div class="copyright-tag">
+    &copy; {today.getFullYear()}Tortas Ahogadas Mi Barrio LLC. All rights
+    reserved
+  </div>
 </footer>
 <style>
   footer {
     border-top: 8.5px solid var(--chiva);
-    padding: 3em 2em 7em 2em;
-    background: var(--accent-dark);
-    color: rgb(var(--chiva));
+    padding: 2em 1em 6em 1em;
+    background-color: var(--accent);
+
+    color: rgb(var(--gray));
     text-align: center;
   }
+  .logo-container img {
+    width: 80px; /* adjust the width as needed */
+    height: auto;
+    margin: 20px auto; /* adjust the margin as needed */
+    border-radius: 40px;
+  }
+
   .social-links {
     display: flex;
     justify-content: center;
@@ -129,15 +137,9 @@ import { SC_FB_TAG, SC_IG_TAG, SC_TK_TAG } from "../consts";
     color: rgb(var(--gray-dark));
   }
 
-  .logo-containerr img {
-    width: 80px; /* adjust the width as needed */
-    height: auto;
-    margin: 20px auto; /* adjust the margin as needed */
-    border-radius: 40px;
-  }
-
   .copyright-tag {
-    color: #f8f6ee;
+    color: #ede1d1;
+
     /* color: rgb(255, 251, 0); */
   }
 </style>

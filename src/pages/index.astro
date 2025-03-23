@@ -3,6 +3,9 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import "../styles/fuego.css";
+
+
 
 const revOne="Grant Cohn posted a video of him eating here. I had to check it out. I had a carnitas torta ahogada.";
 const revTwo="Delicious tortas ahogadas! Fast service. Very clean place. This was my second time. I will come again!";
@@ -12,26 +15,33 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
+  <style>
+    .ban {
+      position: relative;
+    }
+
+    .ban img {
+      vertical-align: middle;
+      width: 100%;
+      height: 100%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+  </style>
+
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
   <body>
     <Header />
-    <!-- IMG: Banner Section Content -->
-
-    <div class="banner-image">
+    <div class="ban">
       <img src="bgimg.jpeg" alt="Background Image" />
     </div>
     <main>
-      <h1>Tortas Ahogadas Mi Barrio</h1>
-      <section>
+      <h1>TORTAS AHOGADAS MI BARRIO</h1>
+      <div>
         <h3>* Estilo Jalisco *</h3>
-        <p></p>
-        <!-- <div>
-          <h3>BEST IN TOWN!</h3>
-        </div> -->
-      </section>
-
+      </div>
       <!-- Menu Slideshow Section -->
       <section>
         <div>
@@ -68,18 +78,15 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
           </div>
         </div>
       </section>
-
-      <!-- REV Section -->
-      <section>
-        <!-- Cards Component -->
-
-        
-
-
-
-         <!-- Review Section -->
-
-      <section>
+      <div class="view-more-button">
+        <a
+          href="https://www.yelp.com/biz/tortas-ahogadas-mi-barrio-oakland"
+          class="button">VIEW MORE</a
+        >
+      </div>
+    </main>
+	
+	<section>
         <h2>Best Reviews</h2>
 
         <div class="title-underline"></div>
@@ -127,8 +134,6 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
             class="button">VIEW MORE</a
           >
       </section>
-    </main>
-    <!-- Footer Component-->
     <Footer />
     <script>
       import "../scripts/slider.js";

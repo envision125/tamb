@@ -54,7 +54,8 @@ h6 {
   line-height: 1.2;
 }
 h1 {
-  font-size: 3.052em;
+  /* font-size: 2.052em; */
+  font-size: 25px;
   color: var(--chiva);
   text-align: center;
   text-shadow: 1px 1px 2px #00468c;
@@ -62,20 +63,22 @@ h1 {
   padding: 10px;
 }
 h2 {
-  font-size: 2.441em;
+  /* font-size: 2.441em; */
+  font-size: 23px;
+
   font-weight: 700;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.35) 1px 0 10px;
   color: #00468c;
-
 }
 h3 {
-  font-size: 1.953em;
+  /* font-size: 1.953em; */
+  font-size: 25px;
+
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.35) 1px 0 10px;
 
   color: #006338;
-
 }
 h4 {
   font-size: 1.563em;

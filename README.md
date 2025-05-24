@@ -2,9 +2,16 @@
 
 Copyright © 2025, Mextrix Design LLC
 
-## 🚀 Project Structure
+##  Website Sum-Up
+Build a dynamic and mobile first approach website for a non-profit organization.
 
-Inside of your Astro project, you'll see the following folders and files:
+ORG: Nu Alpha Kappa Fraternity
+
+
+
+##  Website Folder Structure
+
+Inside of the Astro website, you'll see the following folders and files:
 
 ```text
 ├── public/

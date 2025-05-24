@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Card Grid</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fafafa;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .grid-container {
+      max-width: 1000px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+    /* .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-bottom: 2px solid #ff7043;
+      transition: transform 0.3s ease;
+    } */
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 16px 20px;
+      flex-grow: 1;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: #ff5722;
+      text-transform: capitalize;
+      letter-spacing: 0.03em;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.4;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    @media (max-width: 480px) {
+      .card img {
+        height: 140px;
+      }
+      .card-content {
+        padding: 14px 16px;
+      }
+      .card-title {
+        font-size: 1.1rem;
+      }
+      .card-description {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="grid-container" aria-label="Food menu card grid">
+    <article class="card" tabindex="0">
+      <img src=image8.jpeg alt="Delicious pasta" />
+      <div class="card-content">
+        <h2 class="card-title">Tacos De Buche </h2>
+        <p class="card-description">Fresh vegetables tossed with tender pasta and rich garlic sauce.</p>
+      </div>
+    </article>
+
+    <article class="card" tabindex="0">
+      <img src="tmojada.jpeg" alt="Fresh salad" />
+      <div class="card-content">
+        <h2 class="card-title">Garden Salad</h2>
+        <p class="card-description">Crisp mixed greens with tomatoes, cucumbers, and a tangy vinaigrette.</p>
+      </div>
+    </article>
+
+    <article class="card" tabindex="0">
+      <img src="image0.jpeg" alt="Tasty burger" />
+      <div class="card-content">
+        <h2 class="card-title">Classic Burger</h2>
+        <p class="card-description">Juicy grilled beef patty layered with cheese, lettuce, and tomato.</p>
+      </div>
+    </article>
+
+    <article class="card" tabindex="0">
+      <img src="image2.jpeg" alt="Dessert cake" />
+      <div class="card-content">
+        <h2 class="card-title">Chocolate Cake</h2>
+        <p class="card-description">Rich and moist chocolate cake topped with creamy frosting.</p>
+      </div>
+    </article>
+
+    <article class="card" tabindex="0">
+      <img src="image9.jpeg" alt="Grilled salmon" />
+      <div class="card-content">
+        <h2 class="card-title">Grilled Salmon</h2>
+        <p class="card-description">Perfectly grilled salmon with a side of steamed vegetables.</p>
+      </div>
+    </article>
+
+    <article class="card" tabindex="0">
+      <img src="image5.jpeg" alt="Pizza slice" />
+      <div class="card-content">
+        <h2 class="card-title">Margherita Pizza</h2>
+        <p class="card-description">Classic pizza topped with fresh mozzarella, basil, and tomatoes.</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

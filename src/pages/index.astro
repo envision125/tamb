@@ -3,8 +3,6 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import "../styles/fuego.css";
-
 
 
 const revOne="Grant Cohn posted a video of him eating here. I had to check it out. I had a carnitas torta ahogada.";
@@ -15,33 +13,26 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
 
 <!doctype html>
 <html lang="en">
-  <style>
-    .ban {
-      position: relative;
-    }
-
-    .ban img {
-      vertical-align: middle;
-      width: 100%;
-      height: 100%;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      background-repeat: no-repeat;
-      object-fit: cover;
-    }
-  </style>
-
-  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
   <body>
     <Header />
-    <div class="ban">
+    <!-- IMG: Banner Section Content -->
+
+    <div class="banner-image">
       <img src="bgimg.jpeg" alt="Background Image" />
     </div>
     <main>
-      <h1>TORTAS AHOGADAS MI BARRIO</h1>
-      <div>
+      <h1>Tortas Ahogadas Mi Barrio</h1>
+      <section>
         <h3>* Estilo Jalisco *</h3>
-      </div>
+        <p></p>
+        <!-- <div>
+          <h3>BEST IN TOWN!</h3>
+        </div> -->
+      </section>
+
       <!-- Menu Slideshow Section -->
       <section>
         <div>
@@ -78,9 +69,47 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
           </div>
         </div>
       </section>
-    </main>
-	
-	<section>
+
+     
+
+
+
+<!-- <div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>{re}</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Card 2</h3>
+      <p>Delicious tortas ahogadas! Fast service. Very clean place. This was my second time. I will come again!</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>Delicious tortas ahogadas! Fast service. Very clean place. This was my second time. I will come again!</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Card 4</h3>
+      <p>Delicious tortas ahogadas! Fast service. Very clean place. This was my second time. I will come again!</p>
+      <p>Some text</p>
+    </div>
+  </div>
+</div> -->
+
+
+
+      <section>
         <h2>Best Reviews</h2>
 
         <div class="title-underline"></div>
@@ -128,6 +157,8 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
             class="button">VIEW MORE</a
           >
       </section>
+    </main>
+    <!-- Footer Component-->
     <Footer />
     <script>
       import "../scripts/slider.js";

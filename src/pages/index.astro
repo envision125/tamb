@@ -4,6 +4,8 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
+import { Image } from "astro:assets";
+
 
 const revOne="Grant Cohn posted a video of him eating here. I had to check it out. I had a carnitas torta ahogada.";
 const revTwo="Delicious tortas ahogadas! Fast service. Very clean place. This was my second time. I will come again!";
@@ -15,21 +17,28 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
+     <Header />
     <!-- IMG: Banner Section Content -->
 
     <div class="banner-image">
       <img src="bgimg.jpeg" alt="Background Image" />
+      <div class="banner-overlay"></div>
+      <div class="banner-text">
+        <h1>Tortas Ahogadas Mi Barrio</h1>
+        <p>Estilo Jalisco!</p>
     </div>
-    <main>
-      <h1>Tortas Ahogadas Mi Barrio</h1>
-      <section>
-        <h3>* Estilo Jalisco *</h3>
-        
+    </div>
+  </head>
   
-      </section>
+  <body>
+   
+
+
+
+
+    <main>
+    
+
 
       <!-- Menu Slideshow Section -->
       <section>
@@ -40,13 +49,13 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
             <div class="mySlides fade">
               <img src="torta.JPG" style="width: 100%;" />
 
-              <div class="text">TORTAS AHOGADAS</div>
+              <!-- <div class="text">TORTAS AHOGADAS</div> -->
             </div>
 
             <div class="mySlides fade">
               <img src="image7.jpeg" style="width:100%" />
 
-              <div class="text">PLATILLOS</div>
+              <!-- <div class="text">Tacos De Papa Con Buche</div> -->
             </div>
 
             <div class="mySlides fade">
@@ -96,43 +105,7 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
 
         <div class="title-underline"></div>
 
-        <!-- <div class="row">
-          <div class="column">
-            <div class="card">
-              <p>
-                {revOne}
-              </p>
-              <footer>Fred</footer>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <p>{revTwo}</p>
-
-              <footer>Pia</footer>
-            </div>
-          
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <p>{revTres}</p>
-
-              <footer>Mariana</footer>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <p>{revCuatro}</p>
-
-              <footer>Miguel</footer>
-            </div>
-          </div>
-
        
-        </div> -->
         <div class="view-more-button">
           <a
             href="https://www.yelp.com/biz/tortas-ahogadas-mi-barrio-oakland"
@@ -151,3 +124,46 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
     </script>
   </body>
 </html>
+<style>
+      .banner-image {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+      }
+
+      .banner-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+
+      .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        z-index: 2;
+      }
+
+      .banner-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .banner-text p {
+        font-size: 1.2rem;
+      }
+</style>

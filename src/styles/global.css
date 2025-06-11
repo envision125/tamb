@@ -74,7 +74,7 @@ h2 {
   font-weight: 700;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.35) 1px 0 10px;
-  color: #e6f2ff;
+  color: white;
 }
 h3 {
   /* font-size: 1.953em; */
@@ -85,12 +85,7 @@ h3 {
 
   color: #006338;
 }
-h4 {
-  font-size: 1.563em;
-}
-h5 {
-  font-size: 1.25em;
-}
+
 strong,
 b {
   font-weight: 700;
@@ -129,7 +124,10 @@ pre {
 
 hr {
   border: none;
-  border-top: 8px dashed #006338;
+  height: 10px ;
+  background-color: #d7e0dc;
+  /* background: linear-gradient(to right, #dab007, #b01c2e); */
+  /* border-top: 50px solid #006338; */
 }
 @media (max-width: 720px) {
   body {

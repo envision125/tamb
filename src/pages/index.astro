@@ -17,7 +17,9 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-     <Header />
+  </head>
+  <body>
+    <Header />
     <!-- IMG: Banner Section Content -->
 
     <div class="banner-image">
@@ -25,21 +27,11 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
       <div class="banner-overlay"></div>
       <div class="banner-text">
         <h1>Tortas Ahogadas Mi Barrio</h1>
-        <p>Estilo Jalisco!</p>
+        <p>ESTILO JALISCO!</p>
+      </div>
     </div>
-    </div>
-  </head>
-  
-  <body>
-   
-
-
-
 
     <main>
-    
-
-
       <!-- Menu Slideshow Section -->
       <section>
         <div>
@@ -60,8 +52,6 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
 
             <div class="mySlides fade">
               <img src="trestacos.jpeg" style="width:100%" />
-
-              <div class="text">CEVICHE</div>
             </div>
           </div>
 
@@ -76,55 +66,40 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
           </div>
         </div>
       </section>
-<section>
-  <h2>Best Reviews</h2>
-   <div class="container" role="list">
-    <article class="card" role="listitem" tabindex="0" aria-label="Review by Alice">
-      <div class="reviewer-name">Fred</div>
-      <p class="review-text">{revOne}</p>
-      <div class="rating" aria-label="4 out of 5 stars">★★★★☆</div>
-    </article>
-    <article class="card" role="listitem" tabindex="0" aria-label="Review by Jason Lee">
-      <div class="reviewer-name">Pia</div>
-      <p class="review-text">{revTwo}</p>
-      <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
-    </article>
-    <article class="card" role="listitem" tabindex="0" aria-label="Review by Maria Gonzalez">
-      <div class="reviewer-name">Mariana</div>
-      <p class="review-text">{revTres}</p>
-      <div class="rating" aria-label="3 out of 5 stars">★★★☆☆</div>
-    </article>
-     <article class="card" role="listitem" tabindex="0" aria-label="Review by Maria Gonzalez">
-      <div class="reviewer-name">Miguel</div>
-      <p class="review-text">{revCuatro}</p>
-      <div class="rating" aria-label="3 out of 5 stars">★★★☆☆</div>
-    </article>
-</section>
       <section>
-        
-
+        <h2>CUSTOMER LOVE US</h2>
         <div class="title-underline"></div>
-
-       
-        <div class="view-more-button">
-          <a
-            href="https://www.yelp.com/biz/tortas-ahogadas-mi-barrio-oakland"
-            class="button">VIEW MORE</a
-          >
+        <div class="container" role="list">
+          <article class="card" role="listitem" tabindex="0" aria-label="Review by Alice">
+            <div class="reviewer-name">Fred</div>
+            <p class="review-text">{revOne}</p>
+            <div class="rating" aria-label="4 out of 5 stars">★★★★☆</div>
+          </article>
+          <article class="card" role="listitem" tabindex="0" aria-label="Review by Jason Lee">
+            <div class="reviewer-name">Pia</div>
+            <p class="review-text">{revTwo}</p>
+            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+          </article>
+          <article class="card" role="listitem" tabindex="0" aria-label="Review by Maria Gonzalez">
+            <div class="reviewer-name">Mariana</div>
+            <p class="review-text">{revTres}</p>
+            <div class="rating" aria-label="3 out of 5 stars">★★★☆☆</div>
+          </article>
+          <article class="card" role="listitem" tabindex="0" aria-label="Review by Maria Gonzalez">
+            <div class="reviewer-name">Miguel</div>
+            <p class="review-text">{revCuatro}</p>
+            <div class="rating" aria-label="3 out of 5 stars">★★★☆☆</div>
+          </article>
+        </div>
+         <div class="view-more-button">
+          <a href="https://www.yelp.com/biz/tortas-ahogadas-mi-barrio-oakland" class="button">VIEW MORE REVIEWS</a>
+        </div>
       </section>
+     <hr>
     </main>
     <!-- Footer Component-->
     <Footer />
     <style>
-
-      
-    </style>
-    <script>
-      import "../scripts/slider.js";
-    </script>
-  </body>
-</html>
-<style>
       .banner-image {
         position: relative;
         width: 100%;
@@ -153,17 +128,29 @@ const revCuatro="Muy muy buenas las tortas y me imagino que todo lo demás tambi
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        color: rgb(13, 194, 0);
         text-align: center;
+        width: 90%;
+        max-width: 800px;
+        padding: 0 1rem;
         z-index: 2;
+        border: 2px solid rgb(194, 0, 0);
+        background-color: black;
       }
 
       .banner-text h1 {
-        font-size: 2.5rem;
+        font-size: clamp(1.5rem, 5vw, 3rem);
         margin-bottom: 0.5rem;
+        line-height: 1.1;
       }
 
       .banner-text p {
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        margin: 0;
       }
-</style>
+    </style>
+    <script>
+      import "../scripts/slider.js";
+    </script>
+  </body>
+</html>

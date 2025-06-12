@@ -1,0 +1,63 @@
+---
+const cateringImage = "/image9.jpeg";
+const catering = "/image8.jpeg";
+const imagedoes = "/image2.jpeg";
+---
+
+<section class="catering-event">
+  <h2>POPULAR PLATES</h2>
+  <div class="title-underline"></div>
+  <div class="content">
+    <img src={cateringImage} alt="Torta Ahogada En Bolsa" />
+    <img src={catering} alt="Catering Event" />
+    <img src={imagedoes} alt="Catering Event" />
+  </div>
+  <button>
+    <a href="/catering" aria-label="Learn more about our catering services"
+      >menu</a
+    >
+  </button>
+</section>
+
+<style>
+  .catering-event {
+    /* background-color: #5d0000; */
+    /* padding: 2rem; */
+    /* background-color: #f9f9f9;
+    border: 2px solid #d80606; */
+    margin-top: 2rem;
+  }
+  .catering-event h2 {
+    color: #cdd0cd;
+    margin-bottom: 1rem;
+  }
+  .catering-event .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .catering-event img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* border: 1px solid #ccc; */
+  }
+  .catering-event .text {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  .catering-event .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #d80606;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .catering-event .button:hover {
+    background-color: #a00404;
+  }
+</style>

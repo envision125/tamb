@@ -4,7 +4,7 @@ const catering = "/image8.jpeg";
 const imagedoes = "/image2.jpeg";
 ---
 
-<section class="catering-event">
+<!-- <section class="catering-event">
   <h2>POPULAR PLATES</h2>
   <div class="title-underline"></div>
   <div class="content">
@@ -17,9 +17,119 @@ const imagedoes = "/image2.jpeg";
       >menu</a
     >
   </button>
-</section>
+</section> -->
+ <section class="banner" role="banner" aria-label="Popular Plates Banner">
+    <h1>POPULAR PLATES</h1>
+  </section>
+ <section aria-labelledby="popular-menu-title">
+    <div class="popular-menu" role="list">
+      <article class="menu-card" role="listitem" tabindex="0" aria-label="Grilled Chicken with Vegetables">
+        <img class="menu-image"  src={cateringImage} alt="Grilled chicken served with grilled vegetables on a white plate" />
+        <!-- <div class="menu-content">
+          <h3 class="menu-title">Grilled Chicken with Vegetables</h3>
+          <p class="menu-description">Juicy grilled chicken breast served with a side of seasonal vegetables and a light herb sauce.</p>
+          <div class="menu-price">$18.99</div>
+        </div> -->
+      </article>
+      <article class="menu-card" role="listitem" tabindex="0" aria-label="Classic Margherita Pizza">
+        <img class="menu-image" src={catering} alt="Classic Margherita pizza topped with fresh basil and mozzarella on a wooden board" />
+        <!-- <div class="menu-content">
+          <h3 class="menu-title">Classic Margherita Pizza</h3>
+          <p class="menu-description">Thin crust pizza topped with tomato sauce, fresh mozzarella, and basil leaves, baked to perfection.</p>
+          <div class="menu-price">$14.50</div>
+        </div> -->
+      </article>
+      <article class="menu-card" role="listitem" tabindex="0" aria-label="Chocolate Lava Cake">
+        <img class="menu-image" src={imagedoes} alt="Chocolate lava cake with molten center on a white dessert plate, garnished with powdered sugar" />
+        <!-- <div class="menu-content">
+          <h3 class="menu-title">Chocolate Lava Cake</h3>
+          <p class="menu-description">Rich and gooey chocolate cake with a molten chocolate center, served warm with vanilla ice cream.</p>
+          <div class="menu-price">$7.99</div>
+        </div> -->
+      </article>
+      
+    </div>
+  </section>
 
 <style>
+ /* Modern Web Design Standards */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+  :root {
+    --color-primary: #d97706;
+    --color-bg: #fff8f1;
+    --color-text: #374151;
+    --color-card-bg: #ffffff;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --border-radius: 0px;
+    --gap: 32px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+   .banner {
+      width: 100%;
+      max-width: 1500px;
+      margin-top: 4rem;;
+      background: linear-gradient(135deg, #a00303, #001642);
+      color: #ffffff;
+      text-align: center;
+      padding: 48px 24px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(217, 119, 6, 0.4);
+      user-select: none;
+    }
+    .banner h1 {
+      font-weight: 700;
+      font-size: clamp(2rem, 2vw, 2rem);
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    }
+
+  h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: var(--gap);
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .popular-menu {
+    max-width: 1200px;
+    
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--gap);
+
+  }
+
+  .menu-card {
+    /* background: var(--color-card-bg); */
+    /* border-radius: var(--border-radius); */
+    box-shadow: 0 8px 16px var(--color-shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .menu-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+  }
+  
+  #popular-menu-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #b01c2e;
+  }
+  
   .catering-event {
     /* background-color: #5d0000; */
     /* padding: 2rem; */
@@ -60,4 +170,13 @@ const imagedoes = "/image2.jpeg";
   .catering-event .button:hover {
     background-color: #a00404;
   }
+   @media (max-width: 640px) {
+      .banner {
+        padding: 32px 16px;
+        border-radius: 12px;
+      }
+      .banner h1 {
+        font-size: 2.5rem;
+      }
+    }
 </style>

@@ -125,7 +125,7 @@ pre {
 hr {
   border: none;
   height: 10px ;
-  background-color: #FFC857;
+  background-color: #e7e5e2;
   /* background: linear-gradient(to right, #dab007, #b01c2e); */
   /* border-top: 50px solid #006338; */
 }
@@ -159,6 +159,7 @@ hr {
 .container {
   display: flex;
   flex-direction: row; /* Changed from column to row */
+  flex-wrap: wrap;
   gap: 24px;
   width: auto;
   max-width: 95vw;

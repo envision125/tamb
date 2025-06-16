@@ -29,7 +29,7 @@ h1 {
 
 h3 {
   margin: 0 0 0.5rem 0;
-  color: green;
+  color: rgb(225, 225, 225);
   line-height: 1.2;
   text-align: center;
   text-shadow: 0px 5px 15px rgb(188, 186, 186);
@@ -112,11 +112,50 @@ h4 {
   }
 }
 
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px;
   }
+}
+
+/* Unified Button Styles */
+.btn {
+  margin: 1rem;
+  height: 50px;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 4px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  color:  rgba(255, 0, 0, 1);
+  border: 2px solid rgba(255, 0, 0, 1);
+}
+
+.btn:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 /* Bttn Component */
 
@@ -125,9 +164,8 @@ h4 {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
-
-.view-more-button a {
+} 
+/* .view-more-button a {
   box-shadow: 0 0 10px rgba(0, 30, 255, 0.5);
   color: white;
   border-radius: 5px;
@@ -147,7 +185,7 @@ h4 {
   background-color: #a61818;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.769);
   color: #f8f6ee;
-}
+} */
 
 * {
   box-sizing: border-box;

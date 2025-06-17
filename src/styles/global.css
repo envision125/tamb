@@ -56,7 +56,8 @@ main {
 
 h2 {
   /* font-size: 2.441em; */
-  font-size: 23px;
+  /* font-size: 23px; */
+      font-size: clamp(2rem, 2vw, 2rem);
 
   font-weight: 700;
   text-align: center;
@@ -71,7 +72,12 @@ h3 {
 
   color: #006338;
 }
+.title-underline {
+  border-top: 8px solid #da0707;
+  width: 50px;
 
+  margin: 20px auto;
+}
 strong,
 b {
   font-weight: 700;

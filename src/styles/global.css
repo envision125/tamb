@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #E01B2A;
+  --primary-color: #e01b2a;
   --secprimary: #075594;
-  --secondary: #F3D814;
+  --secondary: #f3d814;
 
   --card-bg: #ffffff;
   --card-border: #e0e0e0;
@@ -20,17 +20,11 @@
     0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
     0 16px 32px rgba(var(--gray), 33%);
 }
-@font-face {
-  font-family: "Atkinson";
-  src: url("/fonts/atkinson-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+
 @font-face {
   font-family: "Atkinson";
   src: url("/fonts/atkinson-bold.woff") format("woff");
-  font-weight: 700;
+  /* font-weight: 700; */
   font-style: normal;
   font-display: swap;
 }
@@ -38,13 +32,13 @@ body {
   font-family: "Atkinson", sans-serif;
   margin: 0;
   padding: 0;
-  text-align: left;
+  /* text-align: left; */
   background-color: #000000;
   background-size: 100% 600px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  color: rgb(var(--gray-dark));
-  font-size: 20px;
+  /* color: rgb(var(--gray-dark)); */
+  /* font-size: 20px; */
   line-height: 1.7;
 }
 main {
@@ -57,52 +51,24 @@ main {
 h2 {
   /* font-size: 2.441em; */
   /* font-size: 23px; */
-      font-size: clamp(2rem, 2vw, 2rem);
+  font-size: clamp(2rem, 2vw, 2rem);
 
   font-weight: 700;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.35) 1px 0 10px;
-  color:  rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
 }
-h3 {
-  font-size: 25px;
 
-  text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.35) 1px 0 10px;
-
-  color: #006338;
-}
 .title-underline {
   border-top: 8px solid #da0707;
   width: 50px;
 
   margin: 20px auto;
 }
-strong,
-b {
-  font-weight: 700;
-}
-a {
-  color: var(--accent);
-}
-a:hover {
-  color: var(--accent);
-}
-p {
-  margin-bottom: 1em;
-}
-.prose p {
-  margin-bottom: 2em;
-}
 
 img {
   max-width: 100%; /* max-width change image size */
   height: auto;
-  border-radius: 8px;
-}
-
-pre {
-  padding: 1.5em;
   border-radius: 8px;
 }
 
@@ -229,10 +195,11 @@ hr {
   font-size: clamp(3rem, 2vw, 2rem);
   margin-bottom: 0.5rem;
   line-height: 1.1;
+  color: #ffffff;
 }
 
 .banner-text p {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: 28px;
   margin: 0;
   color: rgb(13, 194, 0);
 }
@@ -248,7 +215,7 @@ hr {
     width: 90vw;
     max-width: 400px;
   }
-  .banner-text h1{
-    font-size: 2.0rem;
+  .banner-text h1 {
+    font-size: 2rem;
   }
 }

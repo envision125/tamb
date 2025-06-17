@@ -16,17 +16,6 @@
   background-repeat: no-repeat;
   object-fit: cover;
 }
-/* 
-   Style: Banner Title:  
-   Loc: center
-*/
-h1 {
-  color: #ffffff;
-  line-height: 1.2;
-  text-align: center;
-  /* font-size: clamp(2rem, 2vw, 2rem); */
-
-}
 
 
 

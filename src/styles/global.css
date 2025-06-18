@@ -65,12 +65,12 @@ h2 {
 
   margin: 20px auto;
 }
-
-img {
-  max-width: 100%; /* max-width change image size */
+/* max-width change image size */
+/* img {
+  max-width: 100%; 
   height: auto;
   border-radius: 8px;
-}
+} */
 
 hr {
   border: none;

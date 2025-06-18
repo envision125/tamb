@@ -16,10 +16,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         max-width: 100%; */
         margin: 0;
       }
-      .hero-image {
-        width: 100%;
-      }
+      /* .hero-image {
+        max-width: 100%;
+      } */
       .hero-image img {
+        max-width: 100%;
+        height: auto;
         display: block;
         margin: 0 auto;
         border-radius: 8px;
@@ -31,6 +33,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         margin: auto;
         padding: 1em;
         color: #ede1d1;
+        text-align: center;
       }
       .title {
         margin-bottom: 1em;
@@ -66,9 +69,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         <div class="prose">
           <div class="title">
             <h1>{title}</h1>
-            <!-- <div class="date">
-              <FormattedDate date={pubDate} />
-            </div> -->
+            <div class="date">
+              Founded: <FormattedDate date={pubDate} />
+            </div>
             <hr />
           </div>
           <slot />

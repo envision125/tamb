@@ -108,7 +108,7 @@ import { dashLink, SC_FB_TAG, SC_IG_TAG, SC_TK_TAG } from "../consts";
 </footer>
 <style>
   footer {
-    border-top: 8.5px solid var(--secondary);
+    border-top: 8.5px solid var(--primary-color);
     padding: 2em 1em 6em 1em;
     background-color: var(--secprimary);
 
@@ -138,10 +138,16 @@ import { dashLink, SC_FB_TAG, SC_IG_TAG, SC_TK_TAG } from "../consts";
 
   .copyright-tag {
     color: var(--secondary);
-    font-size: 1p6px;
+    font-size: 16px;
     text-align: center;
     
 
     /* color: rgb(255, 251, 0); */
+  }
+
+  @media (max-width: 720px) {
+    .copyright-tag {
+      font-size: 12px;
+    }
   }
 </style>

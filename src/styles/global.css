@@ -222,3 +222,10 @@ hr {
     font-size: 25px;
   }
 }
+
+@media (max-width: 720px) {
+  .banner-text h1 {
+    white-space: normal;
+    font-size: 20px;
+  }
+}

@@ -28,6 +28,8 @@
 }
 .slideshow-container img {
   vertical-align: middle;
+    border-radius: 8px;
+
 }
 
 /* Slideshow container */

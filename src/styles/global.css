@@ -193,7 +193,7 @@ hr {
 }
 
 .banner-text h1 {
-  font-size: clamp(2rem, 2vw, 2rem);
+  font-size: clamp(3rem, 2vw, 2rem);
   margin-bottom: 0.5rem;
   line-height: 1.1;
   color: #ffffff;
@@ -202,7 +202,7 @@ hr {
 }
 
 .banner-text p {
-  font-size: 23px;
+  font-size: 28px;
   margin: 0;
   color: rgb(13, 194, 0);
 }
@@ -221,6 +221,12 @@ hr {
   .banner-text h1 {
     font-size: 25px;
   }
+
+.banner-text p {
+  font-size: 18px;
+  margin: 0;
+  color: rgb(13, 194, 0);
+}
 }
 
 @media (max-width: 720px) {

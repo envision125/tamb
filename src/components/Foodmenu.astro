@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu Selection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .title-font {
+        font-family: "Playfair Display", serif;
+      }
+
+      .menu-card {
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .menu-card:hover {
+        transform: translateY(-5px);
+        box-shadow:
+          0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .location-marker {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="max-w-6xl mx-auto py-8 px-4">
+      <!-- Header -->
+      <header class="text-center mb-12">
+        <h1
+          class="title-font text-4xl md:text-5xl font-bold text-gray-800 mb-4"
+        >
+          Great Menus, Great Food!
+        </h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Choose one of our restaurant locations to view their unique menu
+          offerings
+        </p>
+      </header>
+
+      <!-- Location Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Downtown Location -->
+        <div
+          class="menu-card bg-white rounded-xl overflow-hidden border border-gray-100"
+        >
+          <div class="relative h-48 overflow-hidden">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3036c8e5-e5eb-4742-bc2f-8db3214d97ca.png"
+              alt="Interior of urban restaurant with modern decor and warm lighting"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-semibold"
+            >
+              Oakland
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="location-marker text-red-500 mr-2">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h2 class="title-font text-2xl font-bold text-gray-800">
+                City Center
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Our flagship location in the heart of downtown. Features a modern
+              atmosphere with seasonal dishes and craft cocktails.
+            </p>
+            <div class="mb-5">
+              <div class="flex items-center text-gray-700 mb-1">
+                <i class="fas fa-clock text-amber-500 mr-2"></i>
+                <span>Open: 11:00 AM - 10:00 PM</span>
+              </div>
+              <div class="flex items-center text-gray-700">
+                <i class="fas fa-phone text-amber-500 mr-2"></i>
+                <span>(555) 123-4567</span>
+              </div>
+            </div>
+            <button
+              class="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-4 rounded-lg transition duration-300"
+            >
+              View Downtown Menu
+            </button>
+          </div>
+        </div>
+
+        <!-- Riverside Location -->
+        <div
+          class="menu-card bg-white rounded-xl overflow-hidden border border-gray-100"
+        >
+          <div class="relative h-48 overflow-hidden">
+            <img
+              src="https://placehold.co/600x400"
+              alt="Scenic riverside restaurant patio with outdoor seating and water views"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-semibold"
+            >
+              Rohnert Park
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="location-marker text-red-500 mr-2">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h2 class="title-font text-2xl font-bold text-gray-800">
+                Riverfront
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Our scenic location by the river. Enjoy waterfront dining with
+              fresh seafood and locally sourced ingredients.
+            </p>
+            <div class="mb-5">
+              <div class="flex items-center text-gray-700 mb-1">
+                <i class="fas fa-clock text-emerald-500 mr-2"></i>
+                <span>Open: 11:30 AM - 9:30 PM</span>
+              </div>
+              <div class="flex items-center text-gray-700">
+                <i class="fas fa-phone text-emerald-500 mr-2"></i>
+                <span>(555) 987-6543</span>
+              </div>
+            </div>
+            <button
+              class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-4 rounded-lg transition duration-300"
+            >
+              View Riverside Menu
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="mt-12 text-center">
+        <h2 class="title-font text-2xl font-bold text-gray-800 mb-4">
+          About Our Menus
+        </h2>
+        <p class="text-gray-600 max-w-3xl mx-auto">
+          Each of our locations features a unique menu. While both locations
+          share some signature dishes, each offers exclusive items, and delicious food.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Simple animation for the menu buttons
+      document.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", function () {
+          this.innerHTML = "Opening Menu...";
+          setTimeout(() => {
+            alert(
+              "Menu would open here. In a real implementation, this would link to the menu page."
+            );
+            this.innerHTML = this.innerHTML.includes("Downtown")
+              ? "View Downtown Menu"
+              : "View Riverside Menu";
+          }, 1000);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -6,11 +6,11 @@
   --primary-color: #e01b2a;
   --secprimary: #095495;
   --secondary: #EFB100;
-
+  --dividerColor: #e0e0e0;
   --card-bg: #ffffff;
   --card-border: #e0e0e0;
   --text-color: #e9e2cf;
-  --secondary-text-color: #555555;
+  --secondary-text-color: #f30000;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --chiva: #b01c2e;
   --accent: #022241;
@@ -64,7 +64,7 @@ h2 {
 }
 
 .title-underline {
-  border-top: 8px solid #da0707;
+  border-top: 8px solid #e1c407;
   width: 50px;
 
   margin: 20px auto;
@@ -78,8 +78,8 @@ h2 {
 
 hr {
   border: none;
-  height: 10px;
-  background-color: var(--secprimary);
+  height: 5px;
+  background-color: var(--dividerColor);
   /* background: linear-gradient(to right, #dab007, #b01c2e); */
   /* border-top: 50px solid #006338; */
 }
